@@ -14,6 +14,7 @@
     --text-color-policy:#E4E4E4;
     --color-grey: rgba(255, 255, 255, 0.4);;
     --color-grey2: #8C8C8C;
+    font-weight: 400;
 }
 
 html {
@@ -25,7 +26,6 @@ html {
 
 body{
     position: relative;
-    max-width: 37.5rem;
     max-height: 518.4rem;
 }
 
@@ -51,10 +51,10 @@ ____________________счет padding-top и padding-left родителя*/
 
 .header_img_logo{
 
-    max-width: 18.4rem;
-    max-height: 5.3rem;
+    width: 18.4rem;
+    height: 5.3rem;
     margin-left: 2.9rem;
-    margin-top: 3.0rem;
+    padding-top: 3.0rem;
 }
 
 .header_menu_but
