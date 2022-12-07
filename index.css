@@ -108,7 +108,7 @@ ____________________счет padding-top и padding-left родителя*/
 .boat_img{
     position: relative;
     left: 0rem;
-    top: 19.996rem;
+    top: 16.996rem;
 }
 
 .hide
@@ -148,30 +148,35 @@ margin-left: 2.7rem;
 }
 
 .img_boat_grid{
-
+    padding-left: 2.5rem;
+    padding-top: 2rem;
 }
 
 
 .img_boat_grid_1
 {
+    padding-left: 2.7rem;
+    padding-top: 2.2rem;
 }
 
 .img_boat_grid_2{
+    padding-left: 2.6rem;
+    padding-top: 2.1rem;
 }
 
-.img_boat_grid_3
-{
-
+.img_boat_grid_3{
+    padding-left: 2.8rem;
+    padding-top: 2.2rem;
 }
 
-.img_boat_grid_4
-{
-
+.img_boat_grid_4{
+    padding-left: 2.7rem;
+    padding-top: 2.4rem;
 }
 
-.img_boat_grid_5
-{
-
+.img_boat_grid_5{
+    padding-left: 2.4rem;
+    padding-top: 1.9rem;
 }
 
 p.text_fishing
@@ -183,6 +188,8 @@ line-height: 1.8rem;
 /* identical to box height */
 color: var(--main-text-color);
 text-align: center;
+
+padding-top: 0.5rem;
 }
 
 p.text_jet
@@ -194,6 +201,8 @@ line-height: 1.8rem;
 /* identical to box height */
 text-align: center;
 color: var(--main-text-color);
+
+padding-top: 0.5rem;
 }
 
 p.text_sports{
@@ -203,6 +212,8 @@ font-size: 1.4rem;
 line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
+
+padding-top: 0.5rem;
 }
 
 p.text_pontoon{
@@ -212,6 +223,8 @@ font-size: 1.4rem;
 line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
+
+padding-top: 0.8rem;
 }
 
 p.text_sail
@@ -222,6 +235,8 @@ font-size: 1.4rem;
 line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
+
+padding-top: 1rem;
 }
 
 p.text_yachts
@@ -232,6 +247,8 @@ font-size: 1.4rem;
 line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
+
+padding-top: 0.4rem;
 }
 /*________________________________________END SECTION1______________________________*/
 
@@ -244,13 +261,15 @@ font-size: 2.8rem;
 line-height: 2.8rem;
 color: var(--color-primary);
 
+padding-top: 4rem;
+padding-left: 2.7rem;
 }
 
 .hr_style{
     width: 32.0rem;
-    border: 0.3rem solid var(--color-primary);
+    border: 0.15rem solid var(--color-primary);
 	background: var(--color-primary);
-    border-radius: 0.3rem ;
+    border-radius: 0.3em ;
 }
 
 .text_container_shipment
@@ -259,6 +278,12 @@ font-weight: 400;
 font-size: 2.2rem;
 line-height: 2.4rem;
 color: var(--main-text-color);
+
+padding-left: 2.8rem;
+}
+
+.img_1_section2{
+    padding-left: 2.9rem;
 }
 
 .flat_reck_loading{
@@ -267,6 +292,9 @@ color: var(--main-text-color);
     font-size: 2.8rem;
     line-height: 2.8rem;
     color: var(--color-primary);
+
+    padding-top: 5rem;
+    padding-left: 2.7rem;
 }
 
 .text_flat_reck
@@ -275,6 +303,12 @@ color: var(--main-text-color);
     font-size: 2.2rem;
     line-height: 2.4rem;
     color: var(--main-text-color);
+    padding-left: 2.8rem;
+}
+
+.img_2_section2
+{
+    padding-left: 2.9rem;
 }
 
 .on_deck_cargo
@@ -284,6 +318,9 @@ color: var(--main-text-color);
     font-size: 2.8rem;
     line-height: 2.8rem;
     color: var(--color-primary);
+
+    padding-left: 2.7rem;
+    padding-top: 4rem;
 }
 
 .text_on_deck_cargo
@@ -292,9 +329,13 @@ font-weight: 400;
 font-size: 2.2rem;
 line-height: 2.4rem;
 color: var(--main-text-color);
+
+padding-left: 2.8rem;
 }
 
-
+.img_3_section2{
+    padding-left: 2.9rem;
+}
 /*________________________________________END SECTION2______________________________*/
 
 
@@ -306,6 +347,9 @@ color: var(--main-text-color);
     font-size: 3.4rem;
     line-height: 4.3rem;
     color: var(--main-text-color);
+
+    padding-top: 6rem;
+    padding-left: 2.8rem;
 }
 
 .div_optinal_service
@@ -456,7 +500,23 @@ height: 6.0rem;
 background: #5591FF;
 border-radius: 1.0rem;
 border-style: none;
+
+margin-top: 1.5rem;
 }
+
+input[type="checkbox"]
+{
+    border: 0.1rem solid black;
+    position: absolute;
+    top: 387rem;
+    width: 24px;
+    height: 24px;
+    background: rgba(40,40,40,0.2);
+}
+
+/*TEST*/
+/*END TEST*/
+
 .message_input
 {
     width: 32.0rem;
@@ -464,6 +524,8 @@ height: 10.0rem;
 background: #5591FF;
 border-radius: 1.0rem;
 border-style: none;
+
+margin-top: 1.5rem;
 }
 
 .text_privacy
@@ -472,6 +534,8 @@ font-weight: 400;
 font-size: 1.6rem;
 line-height: 2.0rem;
 color: var(--color-contact_us);
+padding-left: 5rem;
+padding-top: 2.5rem;
 }
 .policy
 {
@@ -479,24 +543,19 @@ color: var(--color-contact_us);
     color: var(--text-color-policy);
 }
 
+
 .send_message
 {
     background: var(--color-send-message);
     border-radius: 1.0rem;
     border-style: none;
-font-weight: 700;
-font-size: 1.6rem;
-line-height: 1.9rem;
-text-transform: uppercase;
-color: var(--color-grey2);
-}
-.send_message:hover {
-    background: var(--color-primary);
-}
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color: var(--color-grey2);
 
-.send_message:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.4rem var(--color-send-message);
+    padding-top: 2rem;
 }
 
 .tel::placeholder{
@@ -516,6 +575,10 @@ color: var(--color-grey2);
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
+}
+
+.form_section{
+    padding-top: 11rem;
 }
 /*________________________________________END SECTION4______________________________*/
 /*________________________________________END MAIN______________________________*/
