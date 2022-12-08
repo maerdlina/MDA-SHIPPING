@@ -578,6 +578,11 @@ padding-top: 2.5rem;
     padding-top: 2rem;
 }
 
+.overflow_img
+{
+    overflow-x:hidden;
+}
+
 .tel::placeholder{
     font-weight: 400;
     font-size: 1.6rem;
