@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mulish:wght@600;700&display=swap');
 
 :root{
@@ -34,13 +33,17 @@ li
 }
 
 ul{
-    padding-left: 0;
+    padding-left: 0rem;
+    margin: 0rem;
 }
 
 a{
     text-decoration: none;
 }
 h2{
+    margin: 0rem;
+}
+p{
     margin: 0rem;
 }
 /*__________________________Margin-left и margin-top - не используются_____________*/
@@ -51,12 +54,14 @@ ____________________счет padding-top и padding-left родителя*/
 
 .header_class
 {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
     padding-left: 2.9rem;
     padding-top: 3.0rem;
+    /*overflow: hidden;*/
 }
 
 .header_img_logo{
-
     width: 18.4rem;
     height: 5.3rem;
 }
@@ -65,10 +70,7 @@ ____________________счет padding-top и padding-left родителя*/
 {
   background: transparent; 
   border-style: none;
-  width: 3.1rem;
-  height: 3.1rem;
   padding-left: 10.4rem;
-  padding-top: 4.1rem;
 }
 /*________________________________________END HEADER______________________________*/
 
@@ -76,42 +78,45 @@ ____________________счет padding-top и padding-left родителя*/
 /*________________________________________MAIN______________________________*/
 /*________________________________________SECTION1______________________________*/
 
-
 .boat_loading{
     font-family: 'Mulish', sans-serif;;
     font-weight: 600;
     font-size: 3.8rem;
-    line-height: 4.2rem;
+    line-height: 5.2rem;
     color: var(--main-text-color);
-    
-    max-width: 50rem;
-    max-height: 4.2rem;
     margin: 0rem;
-    }
+
+    padding-left: 2.7rem;
+    padding-top: 5.2rem;
+}
     
 .boat_loading_text{
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: rgba(24, 22, 45, 0.9);
-    
+    font-style: normal;
     width: 32.0rem;
-    height: 7.2rem;
+    height: 10rem;
     padding-left: 2.9rem;
-
+    padding-top: 2.5rem;
     margin: 0rem;
-    }
+}
+
+.box_container_boat{
+    position: relative;
+    top: 1.5rem;
+}
 
 .cupboard_img{
     position: absolute;
-    left: 13.068rem;
-    top: 28.95rem;
+    overflow-x:hidden;
+    left: 14.650rem;
 }
 
 .boat_img{
-    position: relative;
-    left: 0rem;
-    top: 16.996rem;
+    position: absolute;
+    top: 14.394rem;
 }
 
 .hide
@@ -126,7 +131,8 @@ font-size: 1.8rem;
 line-height: 2.2rem;
 text-transform: uppercase;
 color: var(--color-primary);
-padding-top: 22.456rem;
+
+padding-top: 40.1rem;
 padding-left: 2.7rem;
 
 margin: 0rem;
@@ -141,7 +147,8 @@ margin: 0rem;
 
 .container_div
 {
-    padding-left: 27px;
+    padding-left: 2.7rem;
+    padding-top: 2.5rem;
 }
 
  .box_type_of_boats
@@ -154,7 +161,6 @@ margin: 0rem;
 
 .img_boat_grid{
     padding-left: 2.5rem;
-    padding-top: 2rem;
 }
 
 
@@ -240,8 +246,6 @@ font-size: 1.4rem;
 line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
-
-padding-top: 1rem;
 }
 
 p.text_yachts
@@ -272,6 +276,11 @@ padding-left: 2.7rem;
 margin: 0rem;
 }
 
+.hr_padding{
+    padding-left: 2.8rem;
+    padding-top: 2.45rem;
+}
+
 .hr_style{
     width: 32.0rem;
     border: 0.15rem solid var(--color-primary);
@@ -289,12 +298,13 @@ line-height: 2.4rem;
 color: var(--main-text-color);
 
 padding-left: 2.8rem;
-
+padding-top: 3.95rem;
 margin: 0rem;
 }
 
-.img_1_section2{
+.img_section2{
     padding-left: 2.9rem;
+    padding-top: 4rem;
 }
 
 .flat_reck_loading{
@@ -317,14 +327,11 @@ margin: 0rem;
     line-height: 2.4rem;
     color: var(--main-text-color);
     padding-left: 2.8rem;
+    padding-top: 3.95rem;
 
     margin: 0rem;
 }
 
-.img_2_section2
-{
-    padding-left: 2.9rem;
-}
 
 .on_deck_cargo
 {
@@ -348,17 +355,19 @@ line-height: 2.4rem;
 color: var(--main-text-color);
 
 padding-left: 2.8rem;
+padding-top: 3.95rem;
 
 margin: 0rem;
 }
 
-.img_3_section2{
-    padding-left: 2.9rem;
-}
 /*________________________________________END SECTION2______________________________*/
 
 
 /*________________________________________SECTION3______________________________*/
+.section3{
+    padding-top: 10.96rem;
+}
+
 .h2_optional_services
 {
     font-family: 'Mulish', sans-serif;;
@@ -367,7 +376,6 @@ margin: 0rem;
     line-height: 4.3rem;
     color: var(--main-text-color);
 
-    padding-top: 6rem;
     padding-left: 2.8rem;
 }
 
@@ -384,6 +392,8 @@ margin: 0rem;
     width: 32.0rem;
     height: 10.0rem;
     text-align: center;
+
+    margin-top: 2rem;
 }
 
 .text_optional
@@ -488,20 +498,22 @@ font-weight: 400;
 font-size: 1.6rem;
 line-height: 2.0rem;
 color: var(--color-contact_us);
-
+font-style: normal;
+padding-top: 4rem;
 margin: 0rem;
+}
+
+.name_phone_message{
+    padding-top: 3.5rem;
 }
 
 .div_form
 {
-    padding-left: 2.7rem;
     padding-top: 10.2rem;
 }
 
-.center_check_button
-{
-    /*text-align: center;*/
-    padding-top: 3.5rem;
+.padding_without_img{
+    padding-left: 2.7rem;
 }
 
 .name_input
@@ -524,18 +536,53 @@ border-style: none;
 margin-top: 1.5rem;
 }
 
-input[type="checkbox"]
+.grid_send{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+}
+
+/* .input[type="checkbox"]
 {
     border: 0.1rem solid black;
-    position: absolute;
-    top: 387rem;
-    width: 24px;
-    height: 24px;
+    height: 2.4rem;
     background: rgba(40,40,40,0.2);
+    width: 2.4rem;
+} */
+
+#checkb {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    background: transparent;
+    color:black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0.15rem solid var(--color-send-message);
+}
+#checkb:checked {
+    background: rgba(40,40,40,0.7);
+}
+.checkbox-container {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    grid-gap: 2rem;
+    width: 27.1rem;
+    height: 2.4rem;
+    overflow: hidden;
+}
+
+.padding_checkbox{
+    padding-top: 2.5rem;
 }
 
 /*TEST*/
 /*END TEST*/
+
+input[type="text"] {
+    padding: 0px 0px;
+}
 
 .message_input
 {
@@ -554,8 +601,8 @@ font-weight: 400;
 font-size: 1.6rem;
 line-height: 2.0rem;
 color: var(--color-contact_us);
-padding-left: 5rem;
-padding-top: 2.5rem;
+width: 22.7rem;
+/* padding-left: 5rem; */
 }
 .policy
 {
@@ -563,6 +610,9 @@ padding-top: 2.5rem;
     color: var(--text-color-policy);
 }
 
+.padding_send_message{
+    padding-top: 3.5rem;
+}
 
 .send_message
 {
@@ -575,12 +625,15 @@ padding-top: 2.5rem;
     text-transform: uppercase;
     color: var(--color-grey2);
 
-    padding-top: 2rem;
+    width: 320px;
+    height: 60px;
 }
 
 .overflow_img
 {
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
+    padding-left: 0.3rem;
+    padding-top: 2rem;
 }
 
 .tel::placeholder{
@@ -588,18 +641,21 @@ padding-top: 2.5rem;
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
+    padding-left: 2.9rem;
     }
 .name_input::placeholder{
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
+    padding-left: 2.9rem;
 }
 .message_input::placeholder{
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
+    padding-left: 2.9rem;
 }
 
 .form_section{
@@ -612,13 +668,26 @@ padding-top: 2.5rem;
 /*________________________________________FOOTER______________________________*/
 /*________________________________________SECTION______________________________*/
 
+footer{
+    position: relative;
+    margin-top: -12.9rem;
+}
+
 .footer_rect_1
 {
     background: var(--main-text-color);
     border-radius: 3.5rem 3.5rem 0rem 0rem;
-    text-align: center;
 
     height: 73.0rem;
+}
+
+.footer_mda_shipping{
+    padding-top: 6.2rem;
+    padding-left: 7rem;
+}
+
+.footer_padding_home{
+    padding-top: 6.4rem;
 }
 
 .home{
@@ -628,7 +697,14 @@ padding-top: 2.5rem;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: var(--text-contact-color);
+
+    padding-left: 16rem;
 }
+
+.footer_padding_services{
+    padding-top: 3rem;
+}
+
 .services{
     font-weight: 400;
     font-size: 1.8rem;
@@ -636,7 +712,15 @@ padding-top: 2.5rem;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color:  var(--text-contact-color);
+    width: 8.5rem;
+    padding-left: 14.5rem;
 }
+
+.footer_padding_contacts{
+    padding-top: 3rem;
+    padding-left: 13.9rem;
+}
+
 .contacts{
     font-weight: 400;
     font-size: 1.8rem;
@@ -646,6 +730,19 @@ padding-top: 2.5rem;
     color:  var(--text-contact-color);
 }
 
+.footer_grid_icons{
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    padding-top: 8.7rem;
+    padding-left: 13.9rem;
+    grid-gap: 2rem;
+}
+
+.footer_info_padding{
+    padding-left: 11.1rem;
+    padding-top: 3.4rem;
+}
+
 .info
 {
 font-weight: 500;
@@ -653,6 +750,11 @@ font-size: 2.2rem;
 line-height: 2.7rem;
 /* identical to box height */
 color:  var(--text-contact-color);
+}
+
+.footer_info_phone{
+    padding-left: 9.7rem;
+    padding-top: 1.7rem;
 }
 
 .phone_contacts
@@ -668,6 +770,9 @@ color:  var(--text-contact-color);
     font-size: 1.4rem;
     line-height: 1.7rem;
     color: rgba(255, 255, 255, 0.4);
+
+    padding-left: 3.7rem;
+    padding-top: 11.2rem;
 }
 /*________________________________________END SECTION______________________________*/
 /*________________________________________END FOOTER______________________________*/

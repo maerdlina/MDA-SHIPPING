@@ -10,7 +10,9 @@
 </head>
 <body>
     <header class="header_class">
-    <a class="" href="index.html"><img class="header_img_logo" src="img/mda_shipping.svg" alt="logo"></a>
+        <a class="" href="index.html">
+            <img class="header_img_logo" src="img/mda_shipping.svg" alt="logo">
+        </a>
     <button class="header_menu_but"><img src="img/cube.svg" alt="menu"></button>
     </header>
     <main>
@@ -18,9 +20,11 @@
     <section>
     <h1 class="boat_loading">Boat loading</h1>
     <p class="boat_loading_text">Using different container size options, we take care of the boats by securing it safely in the container.</p>
-  
-    <img class="cupboard_img" src="img/cupboard.svg" alt="cupboard">
-    <img class="boat_img" src="img/boat.svg" alt="boat1">
+    <div class="box_container_boat">
+        <img class="cupboard_img" src="section1-shipping-containers.png" alt="cupboard">
+        <img class="boat_img" src="section1_boat.png" alt="boat1">
+    </div>
+    
     <h2><span class="hide">H</span></h2>
     <h3 class="type_boat_text">WE LOAD ALL TYPES OF BOATS</h3>
     
@@ -44,27 +48,28 @@
 <!--section2-->
 <section>
     <h3 class="container_shipment">Container shipment</h3>
-    <hr class="hr_style">
+    <div class="hr_padding"><hr class="hr_style"></div>
+    
 
     <p class="text_container_shipment">Boats or yachts are often transported in containers as a better alternative for cost effectiveness and security reasons. We can offer flip loading for bigger boats that don’t exceed 102 inches in beam width.</p>
-    <img class="img_1_section2" src="img/boat_320_120-28.svg" alt="background">
+    <img class="img_section2" src="img/boat_320_120-28.svg" alt="background">
 
 
     <h3 class="flat_reck_loading">Flat rack loading</h3>
-    <hr class="hr_style">
+    <div class="hr_padding"><hr class="hr_style"></div>
     <p class="text_flat_reck">Boats are transported on the platform and safely lashed. All Flat Rack Shipment are passing NCB Inspection. Best option for bigger boat that don’t exceed 36 feet in length.</p>
     
-    <img class="img_2_section2" src="img/boat_whithout_back.svg" alt="without">
+    <img class="img_section2" src="img/boat_whithout_back.svg" alt="without">
 
     <h3 class="on_deck_cargo">On deck cargo</h3>
-    <hr class="hr_style">
+    <div class="hr_padding"><hr class="hr_style"></div>
     <p class="text_on_deck_cargo">Boats or yachts are loaded/ unloaded directly from the sea or from the shore. Yachts Ships or cranes in cradles are utilized to load bigger boats or yachts.</p>
 
-    <img class ="img_3_section2" src="img/boat_with_boat.svg" alt="boat with boat">
+    <img class ="img_section2" src="img/boat_with_boat.svg" alt="boat with boat">
     </section>
 <!--end section 2-->
 <!--section3-->
-    <section>
+    <section class="section3">
     <h2 class="h2_optional_services">Optional services</h2>
     <div class="div_optinal_service">
     <ul>
@@ -82,20 +87,35 @@
     <section class="form_section">
         <form class="form_contact_us">
             <div class="div_form">
+                <div class="padding_without_img">
                 <h2 class="contact_us">Contact us</h2>
                 <p class="text_contact_us">Contact us if you need more information
                 about our services</p>
-                <div class="center_check_button">
-                <lable><input id="input1" class="name_input" type="text" name="name" placeholder="Name" autocomplete="off"><label for="check2" class="text_privacy"></label></lable><br>
-                <lable><input id="input2" class="tel" type="tel" name="tel" placeholder="Phone Number" autocomplete="off"><label for="check2" class="text_privacy"></label></lable><br>
-                <lable><input id="input3" class="message_input" type="text" name="text" placeholder="Message" autocomplete="off"><label for="check2" class="text_privacy"></label></lable><br>
-                <div class="">
-                    <input type="checkbox" id="check2"><label for="check2" class="text_privacy">I agree with the <a class="policy" href="">Privacy policy</a></label><Br>
-                    <button class="send_message">SEND A MESSAGE</button>
+                <div class="name_phone_message">
+                    <lable><input id="input1" class="name_input" type="text" name="name" placeholder="Name" autocomplete="off"><label for="input1" class=""></label></lable><br>
+                    <lable><input id="input2" class="tel" type="tel" name="tel" placeholder="Phone Number" autocomplete="off"><label for="input2" class=""></label></lable><br>
+                    <lable><input id="input3" class="message_input" type="text" name="text" placeholder="Message" autocomplete="off"><label for="input3" class=""></label></lable><br>
                 </div>
-            <div class="overflow_img">
-                <img class="garage" alt="garage" src="img/IQAAAgGv7eA-192015.svg">
-            </div>
+                <!-- <div class="grid_send">
+                    <input type="checkbox" id="check2">
+                    <label for="check2" class="text_privacy">I agree with the 
+                        <a class="policy" href="">Privacy policy</a>
+                    </label>
+                </div>     -->
+                <div class="padding_checkbox">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkb"/> 
+                        <label for="checkb" class="text_privacy">I agree with the 
+                            <a class="policy" href="">Privacy policy</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="padding_send_message">
+                <button class="send_message">SEND A MESSAGE</button>
+                </div>
+                <div class="overflow_img">
+                    <img class="garage" alt="garage" src="section4_form_contact_us_garage.png">
+                </div>
             </div>
     </form>
     </section>
@@ -104,14 +124,16 @@
 <footer>
     <section>
     <div class="footer_rect_1">
-        <img src="img/mda_shipping_black.svg" alt="Logo"><br>
-        <a href="" class="home">HOME</a><br>
-        <a href="" class="services">SERVICES</a><br>
-        <a href="" class="contacts">CONTACTS</a><br>
-        <a href="index.html"><img src="icon/whatsapp.svg" alt="icon whats"></a> 
-        <a href="index.html"><img src="icon/telegram_(2)3.svg" alt="icon telegram"></a><br>
-        <a href="" class="info">info@cargo.us</a><br>
-        <a href="" class="phone_contacts">+1 912 000 0000</a>
+        <p class="footer_mda_shipping"><img src="img/mda_shipping_black.svg" alt="Logo"></p>
+        <p class="footer_padding_home"><a href="" class="home" style="">HOME</a></p>
+        <p class="footer_padding_services"><a href="" class="services">SERVICES</a></p>
+        <p class="footer_padding_contacts"><a href="" class="contacts">CONTACTS</a></p>
+        <p class="footer_grid_icons">
+            <a href="index.html"><img src="icon/whatsapp.svg" alt="icon whats"></a> 
+            <a href="index.html"><img src="icon/telegram_(2)3.svg" alt="icon telegram"></a>
+        </p>
+        <p class="footer_info_padding"><a href="" class="info">info@cargo.us</a></p>
+        <p class="footer_info_phone"><a href="" class="phone_contacts">+1 912 000 0000</a></p>
         <p class="copi">Copyright © 2022 Cargo. All Rights reserved.</p>
     </div>
     </section>
