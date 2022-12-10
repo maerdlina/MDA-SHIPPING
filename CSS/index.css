@@ -161,6 +161,7 @@ margin: 0rem;
 
 .img_boat_grid{
     padding-left: 2.5rem;
+    padding-top: 2rem;
 }
 
 
@@ -200,7 +201,7 @@ line-height: 1.8rem;
 color: var(--main-text-color);
 text-align: center;
 
-padding-top: 0.5rem;
+padding-top: 2.4rem;
 }
 
 p.text_jet
@@ -213,7 +214,7 @@ line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
 
-padding-top: 0.5rem;
+padding-top: 2.6rem;
 }
 
 p.text_sports{
@@ -224,7 +225,7 @@ line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
 
-padding-top: 0.5rem;
+padding-top: 2.5rem;
 }
 
 p.text_pontoon{
@@ -235,7 +236,7 @@ line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
 
-padding-top: 0.8rem;
+padding-top: 2.6rem;
 }
 
 p.text_sail
@@ -246,6 +247,8 @@ font-size: 1.4rem;
 line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
+
+padding-top: 2.7rem;
 }
 
 p.text_yachts
@@ -257,7 +260,7 @@ line-height: 1.8rem;
 text-align: center;
 color: var(--main-text-color);
 
-padding-top: 0.4rem;
+padding-top: 2.2rem;
 }
 /*________________________________________END SECTION1______________________________*/
 
@@ -631,7 +634,7 @@ width: 22.7rem;
 
 .overflow_img
 {
-    /* overflow-x:hidden; */
+    overflow-x:hidden;
     padding-left: 0.3rem;
     padding-top: 2rem;
 }
