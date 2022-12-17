@@ -5,6 +5,7 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
+    box-sizing: border-box;
     --color-primary: #3579F4;
     --main-text-color: #18162D;
     --text-contact-color: #FFFFFF;
@@ -16,12 +17,12 @@
     --color-grey2: #8C8C8C;
 }
 
-html {
+/* html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}
+} */
 
 body{
     max-height: 518.4rem;
@@ -39,6 +40,7 @@ ul{
 
 a{
     text-decoration: none;
+    margin: 0;
 }
 h2{
     margin: 0rem;
@@ -52,8 +54,7 @@ ____________________счет padding-top и padding-left родителя*/
 
 /*________________________________________HEADER______________________________*/
 
-.header_class
-{
+.header_class{
     display: grid;
     grid-template-columns: 0fr 0fr;
     padding-left: 2.9rem;
@@ -66,8 +67,7 @@ ____________________счет padding-top и padding-left родителя*/
     height: 5.3rem;
 }
 
-.header_menu_but
-{
+.header_menu_but{
   background: transparent; 
   border-style: none;
   padding-left: 10.4rem;
@@ -82,25 +82,39 @@ ____________________счет padding-top и padding-left родителя*/
     font-family: 'Mulish', sans-serif;;
     font-weight: 600;
     font-size: 3.8rem;
-    line-height: 5.2rem;
     color: var(--main-text-color);
-    margin: 0rem;
-
+    /* line-height: 5.2rem; */
+    
+    
+     /*margin: 0rem;
     padding-left: 2.7rem;
-    padding-top: 5.2rem;
+    padding-top: 5.2rem; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5.2rem;
+    margin-left: 2.7rem;
+    margin-bottom: 2.5rem;
 }
     
 .boat_loading_text{
-    font-weight: 400;
+    /* width: 32.0rem; */
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: rgba(24, 22, 45, 0.9);
-    font-style: normal;
-    width: 32.0rem;
-    height: 10rem;
-    padding-left: 2.9rem;
-    padding-top: 2.5rem;
-    margin: 0rem;
+    /* height: 10rem; */
+    /* padding-left: 2.9rem;
+    padding-top: 2.5rem; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 2.9rem;
+    margin-right:2.6rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
 .box_container_boat{
@@ -119,54 +133,97 @@ ____________________счет padding-top и padding-left родителя*/
     top: 14.394rem;
 }
 
-.hide
-{
+.hide{
     display: none;
 }
 
-.type_boat_text
-{   
-font-weight: 600;
-font-size: 1.8rem;
-line-height: 2.2rem;
-text-transform: uppercase;
-color: var(--color-primary);
+.type_boat_text{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
 
-padding-top: 40.1rem;
-padding-left: 2.7rem;
+    padding-top: 40.1rem;
+    padding-left: 2.7rem;
 
-margin: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 2.5rem;
 }
 
-.container {
-    display: grid;
+ /* display: grid;
     max-width: 32.346rem;
     height: 24.8rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); */
+    /* flex-flow: column wrap; */
+/* .container {
+    margin: 0rem;
+    padding: 0rem;
+   
+    display: -webkit-inline-flex;
+    display: inline-flex; 
+    min-width: 32.346rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+} */
+
+div.list_center{
+    text-align: center;
 }
 
-.container_div
-{
+ul.list{
+    /* list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    justify-content: space-evenly;
+    max-width: 32.346rem;
+    row-gap: 4.6rem;
+    column-gap: 0.954rem;
+    align-content: center; 
+    text-align: center;
+    */
+    padding-left: 2.7rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: 0;
+    justify-content: space-evenly;
+    max-width: 32.346rem;
+    row-gap: 2.3rem;
+    column-gap: 0.954rem;
+}
+
+/* .container_div{
+    box-sizing: border-box;
+
     padding-left: 2.7rem;
     padding-top: 2.5rem;
+} */
+
+.box{
+    height: calc(1.8rem + 9rem + 0.5rem);
 }
 
- .box_type_of_boats
-{
+.box_type_of_boats{
     background: #F0F0FA;
     border-radius: 1.0rem;
     width: 10.146rem;
     height: 9.0rem;
+    /* margin: 2.3rem 0.477rem; */
 }
 
 .img_boat_grid{
     padding-left: 2.5rem;
     padding-top: 2rem;
+
 }
 
 
-.img_boat_grid_1
-{
+.img_boat_grid_1{
     padding-left: 2.7rem;
     padding-top: 2.2rem;
 }
@@ -191,97 +248,97 @@ margin: 0rem;
     padding-top: 1.9rem;
 }
 
-p.text_fishing
-{
-font-family: 'Mulish', sans-serif;;
-font-weight: 600;
-font-size: 1.4rem;
-line-height: 1.8rem;
-/* identical to box height */
-color: var(--main-text-color);
-text-align: center;
-
-padding-top: 2.4rem;
+p.text_types_of_boat{
+    display: flex;
+    font-family: 'Mulish', sans-serif;;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    /* identical to box height */
+    color: var(--main-text-color);
+    /* text-align: center; */
+    justify-content: center;
+    align-items:flex-end;
+    margin-top: 0.5rem;
+    /* padding-top: 2.4rem; */
 }
+/* 
+p.text_jet{
+    font-family: 'Mulish', sans-serif;;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    /* identical to box height */
+    /* text-align: center;
+    color: var(--main-text-color);
 
-p.text_jet
-{
-font-family: 'Mulish', sans-serif;;
-font-weight: 600;
-font-size: 1.4rem;
-line-height: 1.8rem;
-/* identical to box height */
-text-align: center;
-color: var(--main-text-color);
-
-padding-top: 2.6rem;
+    padding-top: 2.6rem;
 }
 
 p.text_sports{
-font-family: 'Mulish', sans-serif;;
-font-weight: 600;
-font-size: 1.4rem;
-line-height: 1.8rem;
-text-align: center;
-color: var(--main-text-color);
+    font-family: 'Mulish', sans-serif;;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--main-text-color);
 
-padding-top: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 p.text_pontoon{
-font-family: 'Mulish', sans-serif;;
-font-weight: 600;
-font-size: 1.4rem;
-line-height: 1.8rem;
-text-align: center;
-color: var(--main-text-color);
+    font-family: 'Mulish', sans-serif;;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--main-text-color);
 
-padding-top: 2.6rem;
+    padding-top: 2.6rem;
 }
 
-p.text_sail
-{
-font-family: 'Mulish', sans-serif;;
-font-weight: 600;
-font-size: 1.4rem;
-line-height: 1.8rem;
-text-align: center;
-color: var(--main-text-color);
+p.text_sail{
+    font-family: 'Mulish', sans-serif;;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--main-text-color);
 
-padding-top: 2.7rem;
+    padding-top: 2.7rem;
 }
 
-p.text_yachts
-{
-font-family: 'Mulish', sans-serif;;
-font-weight: 600;
-font-size: 1.4rem;
-line-height: 1.8rem;
-text-align: center;
-color: var(--main-text-color);
+p.text_yachts{
+    font-family: 'Mulish', sans-serif;;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--main-text-color);
 
-padding-top: 2.2rem;
-}
+    padding-top: 2.2rem;
+}  */
 /*________________________________________END SECTION1______________________________*/
 
 /*________________________________________SECTION2______________________________*/
-.container_shipment
-{
-font-family: 'Mulish', sans-serif;;
-font-weight: 700;
-font-size: 2.8rem;
-line-height: 2.8rem;
-color: var(--color-primary);
+.container_shipment{
+    font-family: 'Mulish', sans-serif;;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    color: var(--color-primary);
 
-padding-top: 4rem;
-padding-left: 2.7rem;
-
-margin: 0rem;
+    /* padding-top: 4rem;
+    padding-left: 2.7rem; */
+    margin-top: 9rem;
+    margin-bottom: 2.47rem;
+    margin-left: 2.7rem;
 }
 
 .hr_padding{
-    padding-left: 2.8rem;
-    padding-top: 2.45rem;
+    /* padding-left: 2.8rem;
+    padding-top: 2.45rem; */
+    margin-left: 2.8rem;
 }
 
 .hr_style{
@@ -293,16 +350,15 @@ margin: 0rem;
     margin: 0rem;
 }
 
-.text_container_shipment
-{
-font-weight: 400;
-font-size: 2.2rem;
-line-height: 2.4rem;
-color: var(--main-text-color);
-
-padding-left: 2.8rem;
-padding-top: 3.95rem;
-margin: 0rem;
+.text_container_shipment{
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    color: var(--main-text-color);
+    /* padding-left: 2.8rem;
+    padding-top: 3.95rem; */
+    margin-top: 3.95rem;
+    margin-left: 2.8rem;
+    margin-right: 2.7rem;
 }
 
 .img_section2{
@@ -317,15 +373,14 @@ margin: 0rem;
     line-height: 2.8rem;
     color: var(--color-primary);
 
-    padding-top: 5rem;
-    padding-left: 2.7rem;
+    /* padding-top: 5rem;
+    padding-left: 2.7rem; */
 
-    margin: 0rem;
+    margin-top: 7.972rem;
+    margin-left: 2.7rem;
 }
 
-.text_flat_reck
-{
-    font-weight: 400;
+/* .text_flat_reck{
     font-size: 2.2rem;
     line-height: 2.4rem;
     color: var(--main-text-color);
@@ -333,11 +388,10 @@ margin: 0rem;
     padding-top: 3.95rem;
 
     margin: 0rem;
-}
+} */
 
 
-.on_deck_cargo
-{
+/* .on_deck_cargo{
     font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 2.8rem;
@@ -350,18 +404,16 @@ margin: 0rem;
     margin: 0rem;
 }
 
-.text_on_deck_cargo
-{
-font-weight: 400;
-font-size: 2.2rem;
-line-height: 2.4rem;
-color: var(--main-text-color);
+.text_on_deck_cargo{
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    color: var(--main-text-color);
 
-padding-left: 2.8rem;
-padding-top: 3.95rem;
+    padding-left: 2.8rem;
+    padding-top: 3.95rem;
 
-margin: 0rem;
-}
+    margin: 0rem;
+} */
 
 /*________________________________________END SECTION2______________________________*/
 
@@ -379,28 +431,36 @@ margin: 0rem;
     line-height: 4.3rem;
     color: var(--main-text-color);
 
+    /* padding-left: 2.8rem; */
+    margin-left: 2.8rem;
+    /* margin-bottom: 1rem; */
+}
+
+.div_optinal_service{
     padding-left: 2.8rem;
 }
 
-.div_optinal_service
-{
-    padding-left: 2.8rem;
-}
-
-.button_optional
-{
+.button_optional_first{
     background: var(--text-contact-color);
     box-shadow: -0.4rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
     border-radius: 2.0rem;
     width: 32.0rem;
     height: 10.0rem;
     text-align: center;
+    margin-top: 3rem;
+}
 
+.button_optional{
+    background: var(--text-contact-color);
+    box-shadow: -0.4rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+    border-radius: 2.0rem;
+    width: 32.0rem;
+    height: 10.0rem;
+    text-align: center;
     margin-top: 2rem;
 }
 
-.text_optional
-{
+.text_optional{
     font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 2.2rem;
@@ -413,8 +473,7 @@ margin: 0rem;
     width: 17.2rem;
     height: 2.6rem;
 }
-.text_optional_1
-{
+.text_optional_1{
     font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 2.2rem;
@@ -426,8 +485,7 @@ margin: 0rem;
     width: 25.9rem;
     height: 2.6rem;
 }
-.text_optional_2
-{
+.text_optional_2{
     font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 2.2rem;
@@ -439,8 +497,7 @@ margin: 0rem;
     width: 30.0rem;
     height: 2.6rem;
 }
-.text_optional_3
-{
+.text_optional_3{
     font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 2.2rem;
@@ -452,8 +509,7 @@ margin: 0rem;
     width: 21.1rem;
     height: 5.2rem;
 }
-.text_optional_4
-{
+.text_optional_4{
     font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 2.2rem;
@@ -465,8 +521,7 @@ margin: 0rem;
     width: 22.7rem;
     height: 5.2rem;
 }
-.text_optional_5
-{
+.text_optional_5{
     font-family: 'Mulish', sans-serif;;
     font-weight: 700;
     font-size: 2.2rem;
@@ -481,37 +536,32 @@ margin: 0rem;
 /*________________________________________END SECTION3______________________________*/
 
 /*________________________________________SECTION4______________________________*/
-.form_contact_us
-{
+.form_contact_us{
     background-color: var(--color-primary);
     border-radius: 3.5rem 3.5rem 0rem 0rem;
     height: 115.1rem;
+    width: 100%;
 }
 
-.contact_us
-{
+.contact_us{
     font-weight: 700;
     font-size: 3.4rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
 }
-.text_contact_us
-{
-font-weight: 400;
-font-size: 1.6rem;
-line-height: 2.0rem;
-color: var(--color-contact_us);
-font-style: normal;
-padding-top: 4rem;
-margin: 0rem;
+.text_contact_us{
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    color: var(--color-contact_us);
+    padding-top: 4rem;
+    margin: 0rem;
 }
 
 .name_phone_message{
     padding-top: 3.5rem;
 }
 
-.div_form
-{
+.div_form{
     padding-top: 10.2rem;
 }
 
@@ -519,24 +569,24 @@ margin: 0rem;
     padding-left: 2.7rem;
 }
 
-.name_input
-{
-width: 32.0rem;
-height: 6.0rem;
-background: #5591FF;
-border-radius: 1.0rem;
-border-style: none;
+.name_input{
+    width: 32.0rem;
+    height: 6.0rem;
+    background: #5591FF;
+    border-radius: 1.0rem;
+    border-style: none;
 }
 
-input[type="tel"]
-{
-width: 32.0rem;
-height: 6.0rem;
-background: #5591FF;
-border-radius: 1.0rem;
-border-style: none;
+input[type="tel"]{
+    display:flex ;
+    justify-content: space-around;
+    width: 32.0rem;
+    height: 6.0rem;
+    background: #5591FF;
+    border-radius: 1.0rem;
+    border-style: none;
 
-margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .grid_send{
@@ -587,28 +637,24 @@ input[type="text"] {
     padding: 0px 0px;
 }
 
-.message_input
-{
+.message_input{
     width: 32.0rem;
-height: 10.0rem;
-background: #5591FF;
-border-radius: 1.0rem;
-border-style: none;
+    height: 10.0rem;
+    background: #5591FF;
+    border-radius: 1.0rem;
+    border-style: none;
 
-margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-.text_privacy
-{
-font-weight: 400;
-font-size: 1.6rem;
-line-height: 2.0rem;
-color: var(--color-contact_us);
-width: 22.7rem;
-/* padding-left: 5rem; */
+.text_privacy{
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    color: var(--color-contact_us);
+    width: 22.7rem;
+    /* padding-left: 5rem; */
 }
-.policy
-{
+.policy{
     text-decoration: underline var(--text-color-policy);
     color: var(--text-color-policy);
 }
@@ -617,8 +663,7 @@ width: 22.7rem;
     padding-top: 3.5rem;
 }
 
-.send_message
-{
+.send_message{
     background: var(--color-send-message);
     border-radius: 1.0rem;
     border-style: none;
@@ -632,29 +677,25 @@ width: 22.7rem;
     height: 60px;
 }
 
-.overflow_img
-{
+.overflow_img{
     overflow-x:hidden;
     padding-left: 0.3rem;
     padding-top: 2rem;
 }
 
 .tel::placeholder{
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
     padding-left: 2.9rem;
     }
 .name_input::placeholder{
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
     padding-left: 2.9rem;
 }
 .message_input::placeholder{
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
@@ -663,6 +704,7 @@ width: 22.7rem;
 
 .form_section{
     padding-top: 11rem;
+    /* margin-right: 0rem; */
 }
 
 /*________________________________________END SECTION4______________________________*/
@@ -676,8 +718,7 @@ footer{
     margin-top: -12.9rem;
 }
 
-.footer_rect_1
-{
+.footer_rect_1{
     background: var(--main-text-color);
     border-radius: 3.5rem 3.5rem 0rem 0rem;
 
@@ -694,7 +735,6 @@ footer{
 }
 
 .home{
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.2rem;
     letter-spacing: -0.01em;
@@ -709,7 +749,6 @@ footer{
 }
 
 .services{
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.2rem;
     letter-spacing: -0.01em;
@@ -725,7 +764,6 @@ footer{
 }
 
 .contacts{
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.2rem;
     letter-spacing: -0.01em;
@@ -746,13 +784,12 @@ footer{
     padding-top: 3.4rem;
 }
 
-.info
-{
-font-weight: 500;
-font-size: 2.2rem;
-line-height: 2.7rem;
-/* identical to box height */
-color:  var(--text-contact-color);
+.info{
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    /* identical to box height */
+    color:  var(--text-contact-color);
 }
 
 .footer_info_phone{
@@ -760,16 +797,14 @@ color:  var(--text-contact-color);
     padding-top: 1.7rem;
 }
 
-.phone_contacts
-{
-font-weight: 500;
-font-size: 2.2rem;
-line-height: 2.7rem;
-color:  var(--text-contact-color);
+.phone_contacts{
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    color:  var(--text-contact-color);
 }
 
 .copi{
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.7rem;
     color: rgba(255, 255, 255, 0.4);
