@@ -57,8 +57,10 @@ ____________________счет padding-top и padding-left родителя*/
 .header_class{
     display: grid;
     grid-template-columns: 0fr 0fr;
-    padding-left: 2.9rem;
-    padding-top: 3.0rem;
+    margin-left: 2.9rem;
+    margin-top: 3.0rem;
+    margin-bottom: 0;
+    margin-right: 0;
     /*overflow: hidden;*/
 }
 
@@ -70,7 +72,9 @@ ____________________счет padding-top и padding-left родителя*/
 .header_menu_but{
   background: transparent; 
   border-style: none;
-  padding-left: 10.4rem;
+  margin-left: 10.4rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /*________________________________________END HEADER______________________________*/
 
@@ -217,8 +221,7 @@ ul.list{
 }
 
 .img_boat_grid{
-    padding-left: 2.5rem;
-    padding-top: 2rem;
+    padding: 2rem;
 
 }
 
@@ -362,8 +365,8 @@ p.text_yachts{
 }
 
 .img_section2{
-    padding-left: 2.9rem;
-    padding-top: 4rem;
+    margin-left: 2.9rem;
+    margin-top: 4rem;
 }
 
 .flat_reck_loading{
@@ -506,7 +509,7 @@ p.text_yachts{
     color: var(--text-optional-color);
     padding-top: 2.4rem;
     margin-left: 5.4rem;
-    width: 21.1rem;
+    min-width: 21.1rem;
     height: 5.2rem;
 }
 .text_optional_4{
@@ -546,27 +549,26 @@ p.text_yachts{
 .contact_us{
     font-weight: 700;
     font-size: 3.4rem;
-    line-height: 2.0rem;
+    /* line-height: 2.0rem; */
     color: var(--color-contact_us);
 }
 .text_contact_us{
     font-size: 1.6rem;
     line-height: 2.0rem;
     color: var(--color-contact_us);
-    padding-top: 4rem;
-    margin: 0rem;
+    margin-top: 4rem;
 }
 
 .name_phone_message{
-    padding-top: 3.5rem;
+    margin-top: 3.5rem;
 }
 
 .div_form{
-    padding-top: 10.2rem;
+    margin-top: 10.2rem;
 }
 
 .padding_without_img{
-    padding-left: 2.7rem;
+    margin-left: 2.7rem;
 }
 
 .name_input{
@@ -627,7 +629,7 @@ input[type="tel"]{
 }
 
 .padding_checkbox{
-    padding-top: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 /*TEST*/
@@ -658,10 +660,10 @@ input[type="text"] {
     text-decoration: underline var(--text-color-policy);
     color: var(--text-color-policy);
 }
-
+/* 
 .padding_send_message{
     padding-top: 3.5rem;
-}
+} */
 
 .send_message{
     background: var(--color-send-message);
@@ -675,6 +677,8 @@ input[type="text"] {
 
     width: 320px;
     height: 60px;
+
+    margin-top: 3.5rem;;
 }
 
 .overflow_img{
@@ -715,23 +719,26 @@ input[type="text"] {
 
 footer{
     position: relative;
-    margin-top: -12.9rem;
+    margin-top: -3.5rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
 }
 
 .footer_rect_1{
     background: var(--main-text-color);
     border-radius: 3.5rem 3.5rem 0rem 0rem;
 
-    height: 73.0rem;
+    /* height: 73.0rem; */
 }
 
 .footer_mda_shipping{
+    /* margin-top: 1.2rem; */
     padding-top: 6.2rem;
-    padding-left: 7rem;
+    margin-left: 7rem;
 }
 
 .footer_padding_home{
-    padding-top: 6.4rem;
+    margin-top: 6.4rem;
 }
 
 .home{
@@ -741,11 +748,11 @@ footer{
     text-transform: uppercase;
     color: var(--text-contact-color);
 
-    padding-left: 16rem;
+    margin-left: 16rem;
 }
 
 .footer_padding_services{
-    padding-top: 3rem;
+    margin-top: 3rem;
 }
 
 .services{
@@ -755,12 +762,12 @@ footer{
     text-transform: uppercase;
     color:  var(--text-contact-color);
     width: 8.5rem;
-    padding-left: 14.5rem;
+    margin-left: 14.5rem;
 }
 
 .footer_padding_contacts{
-    padding-top: 3rem;
-    padding-left: 13.9rem;
+    margin-top: 3rem;
+    margin-left: 13.9rem;
 }
 
 .contacts{
@@ -774,14 +781,14 @@ footer{
 .footer_grid_icons{
     display: grid;
     grid-template-columns: 0fr 0fr;
-    padding-top: 8.7rem;
-    padding-left: 13.9rem;
+    margin-top: 8.7rem;
+    margin-left: 13.9rem;
     grid-gap: 2rem;
 }
 
 .footer_info_padding{
-    padding-left: 11.1rem;
-    padding-top: 3.4rem;
+    margin-left: 11.1rem;
+    margin-top: 3.4rem;
 }
 
 .info{
@@ -793,8 +800,8 @@ footer{
 }
 
 .footer_info_phone{
-    padding-left: 9.7rem;
-    padding-top: 1.7rem;
+    margin-left: 9.7rem;
+    margin-top: 1.7rem;
 }
 
 .phone_contacts{
@@ -809,8 +816,8 @@ footer{
     line-height: 1.7rem;
     color: rgba(255, 255, 255, 0.4);
 
-    padding-left: 3.7rem;
-    padding-top: 11.2rem;
+    margin-left: 3.7rem;
+    margin-top: 11.2rem;
 }
 /*________________________________________END SECTION______________________________*/
 /*________________________________________END FOOTER______________________________*/
