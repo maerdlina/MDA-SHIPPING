@@ -25,7 +25,7 @@
 } */
 
 body{
-    /* max-height: 518.4rem; */
+    max-height: 518.4rem;
 }
 
 li
@@ -55,8 +55,8 @@ ____________________счет padding-top и padding-left родителя*/
 /*________________________________________HEADER______________________________*/
 
 .header_class{
-    display: grid;
-    grid-template-columns: 0fr 0fr;
+    /* display: grid;
+    grid-template-columns: 0fr 0fr; */
     margin-left: 2.9rem;
     margin-top: 3.0rem;
     margin-bottom: 0;
@@ -69,18 +69,27 @@ ____________________счет padding-top и padding-left родителя*/
     height: 5.3rem;
 }
 
+button{
+    background: transparent; 
+  border-style: none;   
+}
+
 .header_menu_but{
   background: transparent; 
   border-style: none;
-  margin-left: 10.4rem;
+  /* margin-left: 10.4rem;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0; */
 }
 /*________________________________________END HEADER______________________________*/
 
 
 /*________________________________________MAIN______________________________*/
 /*________________________________________SECTION1______________________________*/
+
+.section1{
+    overflow-x: hidden;
+}
 
 .boat_loading{
     font-family: 'Mulish', sans-serif;;
@@ -124,12 +133,16 @@ ____________________счет padding-top и padding-left родителя*/
 .box_container_boat{
     position: relative;
     top: 1.5rem;
+    height: 33.644rem;
+    min-width: 55.9rem;
+    overflow-x:hidden;
 }
 
 .cupboard_img{
     position: absolute;
     overflow-x:hidden;
     left: 14.650rem;
+    right: 0rem;
 }
 
 .boat_img{
@@ -147,11 +160,8 @@ ____________________счет padding-top и padding-left родителя*/
     line-height: 2.2rem;
     text-transform: uppercase;
     color: var(--color-primary);
-
-    padding-top: 40.1rem;
-    padding-left: 2.7rem;
-
-    margin-top: 0rem;
+    margin-left: 2.7rem;
+    margin-top: 5.056rem;
     margin-bottom: 2.5rem;
 }
 
@@ -178,18 +188,7 @@ div.list_center{
 }
 
 ul.list{
-    /* list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin:0;
-    justify-content: space-evenly;
-    max-width: 32.346rem;
-    row-gap: 4.6rem;
-    column-gap: 0.954rem;
-    align-content: center; 
-    text-align: center;
-    */
-    padding-left: 2.7rem;
+    margin-left: 2.7rem;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -221,34 +220,46 @@ ul.list{
 }
 
 .img_boat_grid{
-    padding: 2rem;
-
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.546rem;
+    padding-bottom: 1.9rem;
 }
 
 
 .img_boat_grid_1{
     padding-left: 2.7rem;
     padding-top: 2.2rem;
+    padding-right: 2.746rem;
+    padding-bottom: 2.1rem;
 }
 
 .img_boat_grid_2{
     padding-left: 2.6rem;
     padding-top: 2.1rem;
+    padding-right: 2.646rem;
+    padding-bottom: 2rem;
 }
 
 .img_boat_grid_3{
     padding-left: 2.8rem;
     padding-top: 2.2rem;
+    padding-right: 2.746rem;
+    padding-bottom: 2.2rem;
 }
 
 .img_boat_grid_4{
     padding-left: 2.7rem;
     padding-top: 2.4rem;
+    padding-right: 2.646rem;
+    padding-bottom: 2.3rem;
 }
 
 .img_boat_grid_5{
     padding-left: 2.4rem;
     padding-top: 1.9rem;
+    padding-right: 2.446rem;
+    padding-bottom: 1.8rem;
 }
 
 p.text_types_of_boat{
@@ -367,6 +378,7 @@ p.text_yachts{
 .img_section2{
     margin-left: 2.9rem;
     margin-top: 4rem;
+    margin-right: 2.6rem;
 }
 
 .flat_reck_loading{
@@ -569,22 +581,21 @@ p.text_yachts{
 }
 
 .padding_without_img{
-    margin: 0 2.7rem;
+    margin-left: 2.7rem;
 }
 
 .name_input{
-    max-width: 32.0rem;
+    width: 90%;
     height: 6.0rem;
     background: #5591FF;
     border-radius: 1.0rem;
     border-style: none;
-    margin-right: 2rem;
 }
 
 input[type="tel"]{
     display:flex ;
     justify-content: space-around;
-    width: 32.0rem;
+    width: 90%;
     height: 6.0rem;
     background: #5591FF;
     border-radius: 1.0rem;
@@ -640,9 +651,9 @@ input[type="tel"]{
 input[type="text"] {
     padding: 0px 0px;
 }
-
+/* padding inline */
 .message_input{
-    width: 32.0rem;
+    width: 90%;
     height: 10.0rem;
     background: #5591FF;
     border-radius: 1.0rem;
@@ -824,3 +835,10 @@ footer{
 }
 /*________________________________________END SECTION______________________________*/
 /*________________________________________END FOOTER______________________________*/
+
+
+.flex_test_button{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
