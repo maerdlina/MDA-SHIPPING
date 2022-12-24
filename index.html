@@ -1,239 +1,424 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MDA SHIPPING</title>
-    <link rel="stylesheet" href="CSS/reseter.css">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Mulish:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.svg" type="icon">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/CSS/normalize.css">
+
+    <link rel="stylesheet" href="/CSS/CSS.css">
 </head>
 <body>
-    <header >
-        <div class="header_flex">
-            <a><img class="header_logo" src="img/mda_shipping_white.svg" alt="mda_shipping"></a>
-            <button  class="header_img_menu"><img src="img/menu_button.png" alt="Menu"></button>
-        </div>
-        <nav>
-            <ul class="header_nav_class">
-                <a><img class="" src="img/mda_shipping_white.svg" alt="mda_shipping"></a>
-                <li><a href="" class="header_menu_class">HOME</a></li>
-                <li><a href="" class="header_menu_class_services">SERVICES</a></li>
-                <li><a href="" class="header_menu_class">CONTACTS</a></li>
-                <div>
-                    <a><img src="img/tg_header.png"></a>
-                    <a><img src="img/whats_header.png"></a>
-                </div>
-            </ul>
-          </nav>
-    </header>
-    <main>
-    <section>
-        <div class="section1">
-            <h1>Boat loading</h1>
-            <p class="section1_text">
-                Using different container size options, we take care of the boats by securing it safely in the container.
-            </p>
-        </div>
-        <div class="section_box_imgs">
-            <img class="section1_conrtainer_img" src="img/section1_container" alt="container">
-            <img class="section1_img_boat" src="img/section1_boat.png" alt="boat">
-        </div>
-    </section >
-            
-    <section class="section2">
-        <h2 class="section2_text_h2">We load all types of boats</h2>
-        <div class="section2_desktop">
-            <ul class="section2_list">
-            <li class="section2_box">
-                <a href="index.html">
-                    <div class="section2_box_type_of_boats">
-                    <img class="section2_img_li_flex" src="img/fishing_boat.png" alt="speed-boat_2">
-                    </div>
-                    <p class="section2_text_li">Fishing boats</p>
+    <header class="header">
+        <div class="main_container">
+            <div class="header_desktop-left">
+                <a href="/" class="">
+                    <img src="/img/logo.svg"
+                         alt="MDA Boating Logotype"
+                         class="header__logo-image">
                 </a>
-            </li>
-               
-            <li class="section2_box">
-                <a href="index.html">
-                    <div class="section2_box_type_of_boats">
-                    <img class="section2_img_li_flex_1" src="img/jet-ski.png" alt="jet">
-                    </div>
-                    <p class="section2_text_li">Jet skis</p>
-                </a>
-            </li>
-                
-            <li class="section2_box">
-                <a href="index.html">
-                    <div class="section2_box_type_of_boats">
-                    <img class="section2_img_li_flex_2" src="img/sport_boats.png" alt="boat">
-                    </div>
-                    <p class="section2_text_li">Sports boats</p>            
-                </a>
-            </li>
-                
-            <li class="section2_box">
-                <a href="index.html">
-                    <div class="section2_box_type_of_boats">
-                    <img class="section2_img_li_flex_3" src="img/pantoon_boats.png" alt="aircraft">
-                    </div>
-                    <p class="section2_text_li">Pontoon boats</p>
-                </a>
-            </li>
-                
-            <li class="section2_box">
-                <a href="index.html">
-                    <div class="section2_box_type_of_boats">
-                    <img class="section2_img_li_flex_4" src="img/sail_boats.png" alt="yacht">
-                    </div>
-                    <p class="section2_text_li">Sail boats</p>
-                </a>
-            </li>
-                
-            <li class="section2_box">
-                <a href="index.html">
-                    <div class="section2_box_type_of_boats">
-                    <img class="section2_img_li_flex_5" src="img/yachts.png" alt="boat2">
-                    </div>
-                    <p class="section2_text_li">Yachts</p>
-                </a>
-            </li>
-            </ul>
-            <!-- <div class="section_box_imgs">
-                <img class="section1_conrtainer_img" src="img/section1_container" alt="container">
-                <img class="section1_img_boat" src="img/section1_boat.png" alt="boat">
-            </div> -->
-        </div>
-    </section>
 
-    <section class="section3">
-        <div class="section_flex_hr">
-            <h3 class="section3_container_shipment">Container shipment</h3>
-            <hr>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li class="active"><a href="">Services</a></li>
+                        <li><a href="/form/form.html">Registration</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <ul class="header__social-links">
+                <li class="header__social-link-item">
+                    <a href="https://t.me" target="_blank" class="header__social-link">
+                        <img src="/img/icons/telegram.svg"
+                             alt="Логотип Telegram"
+                            class="header__social-link-icon">
+                    </a>
+                </li>
+                
+                <li class="header__social-link-item">
+                    <a href="https://whatsapp.com" target="_blank" class="header__social-link">
+                        <img src="/img/icons/whatsapp.svg"
+                             alt="Логотип WhatsApp"
+                            class="header__social-link-icon">
+                    </a>
+                </li>
+            </ul>
+
+            <button class="header__mobile-menu-opener">
+                <img src="/img/icons/mobile-opener.svg" alt="4 circles">
+            </button>
         </div>
-        <div class="section_flex_img">
-            <p class="section3_text_container_shipment">Boats or yachts are often transported in containers as a better alternative for cost effectiveness and security reasons. We can offer flip loading for bigger boats that don’t exceed 102 inches in beam width.</p>
-            <img class="section3_img" src="img/container_shipment.png" alt="background">
-        </div>
-        <div class="section_flex_hr">
-            <h3 class="section3_container_shipment">Flat rack loading</h3>
-            <hr>
-        </div>
-        <div class="section_flex_img">
-            <p class="section3_text_container_shipment">Boats are transported on the platform and safely lashed. All Flat Rack Shipment are passing NCB Inspection. Best option for bigger boat that don’t exceed 36 feet in length.</p>
-            <img class="section3_img" src="img/flat_rack_loading.png" alt="without">
-        </div>
-        <div class="section_flex_hr">
-            <h3 class="section3_container_shipment">On deck cargo</h3>
-            <hr>
-        </div>
-        <div class="section_flex_img">
-            <p class="section3_text_container_shipment">Boats or yachts are loaded/ unloaded directly from the sea or from the shore. Yachts Ships or cranes in cradles are utilized to load bigger boats or yachts.</p>
-            <img class ="section3_img" src="img/on_deck_cargo.png" alt="boat with boat">
-        </div>    
-    </section>
-        
-    <section class="section4">
-            <h2 class="section4_h2_optional_services">Optional services</h2>
-                <ul class="section4_list">
-                    <li class="section4_box">
-                        <a href="index.html">
-                            <div class="section4_button_optional">
-                                <p class="section4_text_li">Cargo insurance</p>
-                            </div>
-                            
-                        </a>
+    </header>
+
+    <main>
+        <section class="boat-loading">
+            <div class="main_container">
+                <div class="boat-loading__left">
+                    <h1 class="boat-loading__title heading-1">Boat Loading</h1>
+                    <p class="boat-loading__description">
+                        Using different container size options, we take care of the boats by securing it safely in the container.
+                    </p>
+
+                    <div class="boat-loading__grid-list-wrapper boat-loading__grid-list-wrapper--desktop">
+                        <h2 class="heading-2 boat-loading-list__title">We load all types of boats</h2>
+
+                        <ul class="boat-loading__grid-list">
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/fishing-boat.png"
+                                         alt="fishing boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Fishing boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/jet-skies.png"
+                                         alt="Jet sky"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Jet skies
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/sport-boat.png"
+                                         alt="Sport boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Sport boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/pontoon-boat.png"
+                                         alt="Pontoon boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Pontoon boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/sail-boat.png"
+                                         alt="Sail boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Sail boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/yacht.png"
+                                         alt="Yacht"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Yachts
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="boat-loading__right">
+                    <img src="/img/boat-with-container.png"
+                         alt="Boat near container"
+                         class="boat-loading__image">
+
+                    <div class="boat-loading__grid-list-wrapper boat-loading__grid-list-wrapper--mobile">
+                        <h2 class="heading-2 boat-loading-list__title">We load all types of boats</h2>
+
+                        <ul class="boat-loading__grid-list">
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/fishing-boat.png"
+                                         alt="fishing boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Fishing boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/jet-skies.png"
+                                         alt="Jet sky"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Jet skies
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/sport-boat.png"
+                                         alt="Sport boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Sport boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/pontoon-boat.png"
+                                         alt="Pontoon boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Pontoon boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/sail-boat.png"
+                                         alt="Sail boat"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Sail boats
+                                </p>
+                            </li>
+
+                            <li class="boat-loading__grid-item">
+                                <div class="boat-loading__grid-item-icon-wrapper">
+                                    <img src="/img/boats/yacht.png"
+                                         alt="Yacht"
+                                         class="boat-loading-item__icon">
+                                </div>
+
+                                <p class="boat-loading__grid-item__name">
+                                    Yachts
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main_container">
+            <section class="page-section container-shipment">
+                <div class="container-shipment__title-wrapper">
+                    <h2 class="heading-2 container-shipment__title">
+                        Container shipment
+                    </h2>
+
+                    <hr class="container-shipment__line">
+                </div>
+
+
+                <div class="container-shipment__inner-wrapper">
+                    <p class="container-shipment__desc">
+                        Boats or yachts are often transported in containers as a better alternative for cost effectiveness and security reasons. We can offer flip loading for bigger boats that don’t exceed 102 inches in beam width.
+                    </p>
+
+                    <img src="/img/container-shipment.jpg"
+                         alt="A boat in container"
+                         class="boat-shipment__image">
+                </div>
+            </section>
+
+            <section class="page-section container-shipment">
+                <div class="container-shipment__title-wrapper">
+                    <h2 class="heading-2 container-shipment__title">
+                        Flat rack loading
+                    </h2>
+                    <hr class="container-shipment__line">
+                </div>
+
+                <div class="container-shipment__inner-wrapper">
+                    <p class="container-shipment__desc">
+                        Boats are transported on the platform and safely lashed. All Flat Rack Shipment are passing NCB Inspection. Best option for bigger boat that don’t exceed 36 feet in length.
+                    </p>
+
+                    <img src="/img/flat-track.jpg"
+                         alt="A boat in container"
+                         class="boat-shipment__image">
+                </div>
+            </section>
+
+            <section class="page-section container-shipment">
+                <div class="container-shipment__title-wrapper">
+                    <h2 class="heading-2 container-shipment__title">
+                        On deck cargo
+                    </h2>
+                    <hr class="container-shipment__line">
+                </div>
+
+                <div class="container-shipment__inner-wrapper">
+                    <p class="container-shipment__desc">
+                        Boats or yachts are loaded/ unloaded directly from the sea or from the shore. Yachts Ships or cranes in cradles are utilized to load bigger boats or yachts.
+                    </p>
+
+                    <img src="/img/deck-cargo.jpg"
+                         alt="Deck cargo"
+                         class="boat-shipment__image">
+                </div>
+            </section>
+
+            <section class="page-section optional-services">
+                <h2 class="heading-2 optional-services__title">
+                    Optional services
+                </h2>
+
+                <ul class="optional-services__grid-list">
+                    <li class="optional-services__grid-item">
+                        Cargo insurance
                     </li>
-                   
-                    <li class="section4_box">
-                        <a href="index.html">
-                            <div class="section4_button_optional">
-                                <p class="section4_text_li">Long term cargo storage</p>
-                            </div>
-                            
-                        </a>
+
+                    <li class="optional-services__grid-item">
+                        Long term cargo storage
                     </li>
-                    
-                    <li class="section4_box">
-                        <a href="index.html">
-                            <div class="section4_button_optional">
-                                <p class="section4_text_li">Detailing and cleaning</p>      
-                            </div>
-                                  
-                        </a>
+
+                    <li class="optional-services__grid-item">
+                        Detailing and cleaning
                     </li>
-                    
-                    <li class="section4_box">
-                        <a href="index.html">
-                            <div class="section4_button_optional">
-                                <p class="section4_text_li">Additional report and inspection</p>
-                            </div>
-                           
-                        </a>
+
+                    <li class="optional-services__grid-item">
+                        Additional report and inspection
                     </li>
-                    
-                    <li class="section4_box">
-                        <a href="index.html">
-                            <div class="section4_button_optional">
-                                <p class="section4_text_li">Plastic film coverage of broken part</p>
-                            </div>
-                            
-                        </a>
+
+                    <li class="optional-services__grid-item">
+                        Plastic film coverage of broken part
                     </li>
-                    
-                    <li class="section4_box">
-                        <a href="index.html">
-                            <div class="section4_button_optional">
-                                <p class="section4_text_li">Moisture bags to avoid mold</p>
-                            </div>
-                            
-                        </a>
+
+                    <li class="optional-services__grid-item">
+                        Moisture bags to avoid mold
                     </li>
                 </ul>
-    </section>
+            </section>
+        </div>
 
-    <section class="section5">
-        <div class="section5_flex_div">
-            <div>
-            <h2 class="section5_contact_us">Contact us</h2>
-            <form class="section5_form_contact_us">
-                <p class="section5_text_contact_us">Contact us if you need more information about our services</p>
-                <div>
-                    <lable><input id="input1" class="name_input" type="text" name="name" placeholder="Name" autocomplete="off"><label for="input1" class=""></label></lable><br>
-                    <lable><input id="input2" class="tel_input" type="tel" name="tel" placeholder="Phone Number" autocomplete="off"><label for="input2" class=""></label></lable><br>
-                    <lable><input id="input3" class="message_input" type="text" name="text" placeholder="Message" autocomplete="off"><label for="input3" class=""></label></lable><br>
+        <section class="page-section contact-us">
+            <div class="main_container">
+                <div class="contact-us__side">
+                    <h2 class="heading-2 contact-us__title">Contact us</h2>
+
+                    <div class="contact-us__desc">
+                        Contact us if you need more information about our services
+                    </div>
+
+                    <form action="" method="POST" class="form contact-us__form">
+                        <label class="form__label-input no-label">
+                            <input type="text"
+                                   name="name"
+                                   placeholder="Name"
+                                   autocomplete="name">
+                        </label>
+
+                        <label class="form__label-input no-label">
+                            <input type="tel"
+                                   inputmode="tel"
+                                   name="phone"
+                                   placeholder="Phone Number"
+                                   autocomplete="tel"
+                                   id="phone-input">
+                        </label>
+
+                        <label class="form__label-input no-label">
+                            <textarea placeholder="Message"></textarea>
+                        </label>
+
+                        <input type="checkbox" required id="contact-us__privacy">
+                        <label for="contact-us__privacy" class="form__label-input checkbox">
+                            <span>I agree with the <a href="/policy">Privacy policy</a></span>
+                        </label>
+
+                        <input type="submit"
+                               value="Send a message"
+                               class="form-input__submit"
+                                disabled>
+                    </form>
                 </div>
-                <div class="section5_checkbox_container">
-                    <input type="checkbox" id="checkb" name="checkb">
-                    <label class="section5_text_checkbox" for="checkb">I agree with the 
-                        <a class="policy" href="index.html">Privacy policy</a>
-                    </label>
-                </div>
-                <button class="section5_send_message">SEND A MESSAGE</button>
-            </form>
+                <img src="/img/contact-us-image.png" alt="Cars in container" class="contact-us__image">
             </div>
-            <img class="section5_img" src="img/img_section5_form.png" alt="boat with boat">
-            <!-- <img class="section5_img_desktop" src="img/section5_img_form.png" alt="boat with boat"> -->
         </section>
     </main>
-    <footer>
-        <img class="footer_img_logo" src="img/mda_shipping_footer.svg">
-        <div class="footer_menu">
-            <p class="footer_text_home">HOME</p>
-            <p class="footer_text_service">SERVICES</p>
-            <p class="footer_text_contacts">CONTACTS</p>
-            <div class="footer_div_icons">
-                <a><img src="img/whats.png"></a>
-                <a><img src="img/tg.png"></a>
+
+    <footer class="footer">
+        <div class="main_container">
+            <div class="footer__up">
+                <a href="/" class="footer__logo">
+                    <img src="/img/logo--white.svg"
+                         alt="MDA Shipping logotype"
+                         class="footer__logo-image">
+                </a>
+
+                <div class="footer-up__menu-social">
+                    <nav class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-social-wrapper">
+                        <ul class="footer-social">
+                            <li>
+                                <a href="https://whatsapp.com">
+                                    <img src="/img/icons/whatsapp.svg" alt="WhatsApp logotype">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://t.me">
+                                    <img src="/img/icons/telegram.svg" alt="Telegram logotype">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="mailto:info@cargo.us">info@cargo.us</a>
+                        <a href="tel:+1 912 000 0000">+1 912 000 0000</a>
+                    </div>
+                </div>
             </div>
-            <p class="footer_text_info">info@cargo.us</p>
-            <p class="footer_text_phone">+1 912 000 0000</p>
-            <p class="footer_copy">Copyright © 2022 Cargo. All Rights reserved.</p>
-    </div>
+
+            <div class="footer__copyright">
+                <p class="footer-copyright__text">
+                    Copyright &copy; 2022 Cargo. All rights reserved;
+                </p>
+            </div>
+        </div>
     </footer>
+
+    </div>
 </body>
 </html>
