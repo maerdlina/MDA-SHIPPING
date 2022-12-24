@@ -243,7 +243,7 @@ input, textarea {
 {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     background-color: #F0F0FA;
@@ -259,7 +259,7 @@ input, textarea {
     color: var(--secondary-color);
 
     margin-top: 3.5rem;
-
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
     box-shadow: 2px 0 10px 1px var(--secondary-color);
 
     transition: .4s;
